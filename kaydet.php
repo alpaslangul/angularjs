@@ -7,14 +7,14 @@ $mail = mysql_real_escape_string($data->ml);
 $yorum = mysql_real_escape_string($data->yrm);
 
 $con = mysql_connect('94.73.146.243', 'sultanTest', 'sultanUser');
-mysql_select_db('test', $con);
+mysql_select_db('message', $con);
 
 $qry_em = 'select count(*) as cnt from message where mail ="' . $mail . '"';
 $qry_res = mysql_query($qry_em);
-$res = mysql_fetch_assoc($qry_res);
+$res = 1;
 
 if($res['cnt']==0){
-$qry = 'INSERT INTO message (name,pass,email) values ("' . $adi . '","' . $mail . '","' . $yorum . '")';
+$qry = 'INSERT INTO message (name,mail,comment) values ("' . $adi . '","' . $mail . '","' . $yorum . '")';
 $qry_res = mysql_query($qry);
 if ($qry_res) {
     $arr = array('msg' => "Kayıt Yapılmıştır", 'error' => '');
