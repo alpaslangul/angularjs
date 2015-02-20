@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/pluton.css" rel="stylesheet" media="screen">
+    <link href="css/jquery.cslider.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.fancybox.css " rel="stylesheet" type="text/css" />
+    <!-- Google Fontları -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+<body ng-app="sultaniumMenu">
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header fL">
+            <a href="#" class="brand">
+                <img src="images/logo.png" width="120" height="40" alt="Logo">
+            </a>
+        </div>
+        <div class="fR">
+            <ul class="nav" id="top-navigation" ng-controller="MenuController">
+                <li ng-repeat="baslik in items" ng-init="{{baslik.title}}">
+                    <a ng-href="{{baslik.href}}">{{baslik.aciklama}}</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="section birinciKisim" id="home">
+    <div class="container">
+        <div class="title">
+            <h1>What We Do</h1>
+            <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+        </div>
+
+        <div class="row-fluid">
+
+            <div class="span4">
+
+            <div class="ortala servis">
+                <div class="yaklas">
+                    <img class="img-circle" src="images/Service1.png" class="img-rounded" alt="service 1">
+                </div>
+                <h3>Modern Design</h3>
+                <p>We Create Modern And Clean Theme For Your Business Company.</p>
+            </div>
+
+
+
+        </div>
+
+            <div class="span4">
+
+                <div class="ortala servis">
+                    <div class="yaklas">
+                        <img class="img-circle" src="images/Service2.png" class="img-rounded" alt="service 2">
+                    </div>
+                    <h3>Modern Design</h3>
+                    <p>We Create Modern And Clean Theme For Your Business Company.</p>
+                </div>
+
+            </div>
+
+            <div class="span4">
+
+                <div class="ortala servis">
+                    <div class="yaklas">
+                        <img class="img-circle" src="images/Service3.png" class="img-rounded" alt="service 3">
+                    </div>
+                    <h3>Modern Design</h3>
+                    <p>We Create Modern And Clean Theme For Your Business Company.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="section ikinciKisim" id="service">
+    <div class="ucgen"></div>
+
+
+    <div class="container">
+
+        <div class="title row">
+            <h1>Have You Seen our Works?</h1>
+            <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+        </div>
+
+        <div class="row text-center" >
+            <div class="col-md-12">
+                <div class="caegories">
+                    <a href="#"  data-filter="*" class="active btn  btn-sm">All</a>
+                    <a href="#" data-filter=".html" class="btn  btn-sm">HTML</a>
+                    <a href="#" data-filter=".css" class="btn  btn-sm">CSS</a>
+                    <a href="#" data-filter=".code" class="btn  btn-sm" >CODE</a>
+                    <a href="#" data-filter=".script" class="btn  btn-sm" >SCRIPT</a>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center" id="portfolio-div">
+
+            <div class="col-md-4 col-sm-4 html">
+                <!-- Just pass categories name in to the divs to make it in that category ( for ex: this is of html category) -->
+
+
+                <a class="fancybox-media" title="Image Title Goes Here" href="images/Portfolio02.png">
+                    <!-- Path for image to open -->
+
+                    <img src="images/Portfolio02.png" class="img-responsive" alt="" />
+                    <!-- Path for image to display -->
+                </a>
+
+                <h3>Image Title Here</h3>
+                <h5><strong>Click On Image</strong> to open image in popup</h5>
+            </div>
+            <div class="col-md-4 col-sm-4 css">
+                <a class="fancybox-media" title="Image Title Goes Here" href="images/Portfolio02.png">
+                    <!-- Path for image to open -->
+
+                    <img src="images/Portfolio02.png" class="img-responsive" alt="" />
+                    <!-- Path for image to display -->
+                </a>
+
+                <h3>Image Title Here</h3>
+                <h5><strong>Click On Image</strong> to open image in popup</h5>
+            </div>
+            <div class="col-md-4 col-sm-4 code">
+
+                <a class="fancybox-media" title="Image Title Goes Here" href="images/Portfolio02.png">
+                    <!-- Path for image to open -->
+
+                    <img src="images/Portfolio02.png" class="img-responsive" alt="" />
+                    <!-- Path for image to display -->
+                </a>
+
+                <h3>Image Title Here</h3>
+                <h5><strong>Click On Image</strong> to open image in popup</h5>
+            </div>
+            <div class="col-md-4 col-sm-4 script">
+                <a class="fancybox-media" title="Image Title Goes Here" href="images/Portfolio02.png">
+                    <!-- Path for image to open -->
+
+                    <img src="images/Portfolio02.png" class="img-responsive" alt="" />
+                    <!-- Path for image to display -->
+                </a>
+                <h3>Image Title Here</h3>
+                <h5><strong>Click On Image</strong> to open image in popup</h5>
+            </div>
+            <div class="col-md-4 col-sm-4 html script">
+                <a class="fancybox-media" title="Image Title Goes Here" href="images/Portfolio02.png">
+                    <!-- Path for image to open -->
+
+                    <img src="images/Portfolio02.png" class="img-responsive " alt="" />
+                    <!-- Path for image to display -->
+                </a>
+
+                <h3>Image Title Here</h3>
+                <h5><strong>Click On Image</strong> to open image in popup</h5>
+            </div>
+            <div class="col-md-4 col-sm-4 css code">
+
+                <a class="fancybox-media" title="Image Title Goes Here" href="images/Portfolio02.png">
+                    <!-- Path for image to open -->
+
+                    <img src="images/Portfolio02.png" class="img-responsive " alt="" />
+                    <!-- Path for image to display -->
+                </a>
+
+                <h3>Image Title Here</h3>
+                <h5><strong>Click On Image</strong> to open image in popup</h5>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+<div class="section ucuncuKisim" id="about"></div>
+
+<div class="section portfolioKisim" id="portfolio"></div>
+
+<div class="section dorduncuKisim" id="clients"></div>
+
+<div class="section besinciKisim" id="price"></div>
+
+<div class="section altinciKisim" id="contact">
+
+    <div class="container">
+
+        <div class="title row">
+            <h1>Contact Us</h1>
+            <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+        </div>
+
+    </div>
+
+    <div class="map-wrapper">
+        <div class="map-canvas" id="map-canvas">Loading map...</div>
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span5 contact-form centered">
+                    <h3>Say Hello</h3>
+                    <div id="successSend" class="alert alert-success invisible">
+                        <strong>Well done!</strong>Your message has been sent.</div>
+                    <div id="errorSend" class="alert alert-error invisible" ng-repeat="error in errors">{{ error}}</div>
+                    <form id="contact-form" ng-controller="veriGir">
+                        <div class="control-group">
+                            <div class="controls">
+                                <input class="span12" type="text" id="name" name="name" placeholder="* Your name..." ng-model="_adi"/>
+                                <div class="error left-align" id="err-name" >Please enter name.</div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <input class="span12" type="email" name="email" id="email" placeholder="* Your email..." ng-model="_mail"/>
+                                <div class="error left-align" id="err-email">Please enter valid email adress.</div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <textarea class="span12" name="comment" id="comment" placeholder="* Comments..." ng-model="_yorum"></textarea>
+                                <div class="error left-align" id="err-comment">Please enter your comment.</div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <button id="send-mail" class="message-btn" ng-click='Kaydet();'>Kaydet</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="scrollup" style="display: block;">
+    <a href="#">
+        <i class="icon-up-open"></i>
+    </a>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery.isotope.js"></script>
+<script src="js/theme/jquery.mixitup.js"></script>
+<script src="js/theme/jquery.bxslider.js"></script>
+<script src="js/theme/jquery.cslider.js"></script>
+<script src="js/theme/jquery.placeholder.js"></script>
+<script src="js/theme/jquery.inview.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;callback=initializeMap"></script>
+<script src="js/theme/app.js"></script>
+<script src="js/angular/angular.min.js"></script>
+<script src="js/angular/angular-route.min.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
